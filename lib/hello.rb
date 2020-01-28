@@ -3,9 +3,10 @@ def hello_t(array)
   
   while i < array.length
     yield array[i]
-    i += 1
+    i = i + 1
   end
 end
+
 
 hello_t(["Tim", "Tom", "Harry"]) do |name|
   if name.start_with?("T")
